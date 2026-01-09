@@ -9,7 +9,6 @@ test('Validación de API - JSONPlaceholder', async ({ request }) => {
       }
     });
   
-    // JSONPlaceholder devuelve 201 al crear
     expect(response.status()).toBe(201);
     const body = await response.json();
     expect(body.title).toBe('QA Senior Test');
